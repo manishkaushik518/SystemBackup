@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page import="test.*"%>
+<%@ page import="java.sql.ResultSet" %>
+<html>
+<head>
+<%
+ViewData obj1= new ViewData();//Creating class Object
+ResultSet r=obj1.readDataBase();
+//Calling add Method
+%>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post">
+
+<table border="2">
+   <tr>
+        <td>Name</td>
+        <td>Accessory</td>
+
+   </tr>
+   <%
+   try
+   {
+
+       while(rs.next())
+       {
+   %>
+           <tr><td><%rs.getInt("userID"); %></td></tr>
+           <tr><td><%rs.getDate("dob"); %></td></tr>
+           <tr><td><%rs.getString("gender"); %></td></tr>
+           <tr><td><%rs.getString("firstName"); %></td></tr>
+           <tr><td><%rs.getString("lastName"); %></td></tr>
+
+   <%
+       }
+   %>
+   </table>
+   <%
+   }
+   catch(Exception e)
+   {
+        e.printStackTrace();
+   }
+   %>
+</form>`
+</body>
+</html>

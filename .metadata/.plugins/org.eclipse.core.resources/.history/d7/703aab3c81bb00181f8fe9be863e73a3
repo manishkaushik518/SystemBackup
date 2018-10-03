@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Record.jsp">  
+<input type="text" name="uname" value="Manish"> 
+<input type="text" name="accessory" value="Pendrive"> 
+<input type="submit" value="Record"><br/>
+</form action="ViewData.jsp"><input type="submit" value="View Data">
+</form>
+</body>
+</html>
