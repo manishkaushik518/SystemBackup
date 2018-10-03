@@ -4,5 +4,6 @@ http://www.vogella.com/tutorials/MySQLJava/article.html
 
 
 mysql> CREATE USER 'finley'@'localhost' IDENTIFIED BY 'password';
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'finley'@'localhost'
-    ->     WITH GRANT OPTION;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' WITH GRANT OPTION;
+
+Test Git Commit
